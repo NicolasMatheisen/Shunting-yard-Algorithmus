@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shunting-Yard Visualizer</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+
+        <main class="visualizer">
+            <h1>Shunting-Yard Visualizer</h1>
+            
+            <div class="userInput">
+                <input 
+                    type="text" 
+                    id="calc-input" 
+                    placeholder="z.B. 3 + 4 * 2" 
+                >
+                <button id="btn-submit">Algorithmus starten</button>
+            </div>
+
+            <div class="debug">
+                <div class="info">
+                    <h3>Input:</h3>
+                    <div class="array-display">[]</div>
+                </div>
+
+                <div class="info">
+                    <h3>Operator Stack:</h3>
+                    <div class="array-display">[]</div>
+                </div>
+
+                <div class="info">
+                    <h3>Output:</h3>
+                    <div class="array-display">[]</div>
+                </div>
+            </div>
+        </main>
+
+        <script src="/shunting-yard.js"></script>
+    </body>
+</html>
