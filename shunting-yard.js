@@ -67,9 +67,9 @@ function zerlegeUserInput() {
     const userInputString = userInput.value;
 
     // \d+([.,]\d+)?  => findet Zahlen (auch mit Komma oder Punkt, z.B. 4,6 oder 32)
-    // [+\-*/()]      => findet die Operatoren +, -, *, / sowie Klammern ( )
+    // [+\-*/:()]     => findet die Operatoren +, -, *, /, : sowie Klammern ( )
     // g              => kontrolliert den kompletten String, bricht nicht ab, wenn die RegEx erfüllt ist
-    const regex = /\d+([.,]\d+)?|[+\-*/()]/g;
+    const regex = /\d+([.,]\d+)?|[+\-*/:()]/g;
 
     input = userInputString.match(regex);
 
